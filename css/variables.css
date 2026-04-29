@@ -1,0 +1,50 @@
+:root {
+  /* Dark Theme Only (Gold Accents) */
+  --color-primary: #0B0F14; /* Main Background */
+  --color-primary-light: #111827; /* Secondary Sections */
+  --color-secondary: #D4AF37; /* Gold Accent */
+  
+  --color-white: #F9FAFB; /* Pure White / Soft White */
+  --color-card-bg: #1F2937; /* Card Backgrounds */
+  --color-gray-50: #111827;
+  --color-gray-100: #1F2937;
+  --color-gray-200: #374151;
+  --color-gray-600: #9CA3AF; /* Secondary Text */
+  
+  --color-steel: #D1D5DB; /* Body Text */
+  --color-steel-dark: #F9FAFB; /* Headings / Soft White */
+  --color-dark: #000000;
+  
+  --color-muted: #9CA3AF;
+  --color-disabled: #6B7280;
+
+  /* Typography */
+  --font-primary: 'Outfit', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+  --space-4xl: 8rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(11, 15, 20, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-blur: blur(10px);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease-in-out;
+}

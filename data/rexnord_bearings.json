@@ -1,0 +1,134 @@
+[
+    {
+        "partNo": "1010G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "50",
+        "od": "115.9",
+        "width": "88.9",
+        "weight": "2.1",
+        "cLoad": "1140",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1015G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "65",
+        "od": "152.4",
+        "width": "101.6",
+        "weight": "4.5",
+        "cLoad": "2350",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1020G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "78",
+        "od": "177.8",
+        "width": "127.0",
+        "weight": "8.2",
+        "cLoad": "4270",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1025G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "98",
+        "od": "212.7",
+        "width": "158.9",
+        "weight": "12.5",
+        "cLoad": "7470",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1030G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "111",
+        "od": "239.7",
+        "width": "187.4",
+        "weight": "18.0",
+        "cLoad": "12100",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1035G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "134",
+        "od": "279.4",
+        "width": "218.9",
+        "weight": "25.0",
+        "cLoad": "18500",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1040G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "160",
+        "od": "317.5",
+        "width": "247.3",
+        "weight": "35.0",
+        "cLoad": "30600",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1045G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "183",
+        "od": "346.1",
+        "width": "277.7",
+        "weight": "45.0",
+        "cLoad": "42000",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1050G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "200",
+        "od": "388.9",
+        "width": "314.3",
+        "weight": "60.0",
+        "cLoad": "56600",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1055G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "220",
+        "od": "425.4",
+        "width": "344.3",
+        "weight": "75.0",
+        "cLoad": "74000",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1060G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "244",
+        "od": "457.0",
+        "width": "384.0",
+        "weight": "95.0",
+        "cLoad": "90400",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    },
+    {
+        "partNo": "1070G20",
+        "type": "Gear Coupling (Lifelign G20)",
+        "bore": "289",
+        "od": "527.0",
+        "width": "451.0",
+        "weight": "135.0",
+        "cLoad": "135000",
+        "c0Load": "-",
+        "brand": "Rexnord"
+    }
+]
