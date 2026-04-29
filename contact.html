@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Inquiry | Indian Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="Indian Sales" onerror="this.src='https://placehold.co/150x50/0A192F/FFF?text=Indian+Sales'">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="brands.html" class="nav-link">Brands</a></li>
+                    <li><a href="industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="contact.html" class="nav-link active btn btn-primary text-white" style="margin-left: 1rem;">Inquiry</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: var(--space-md);">
+                <a href="https://www.linkedin.com/company/indian-sales/" target="_blank" class="nav-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-secondary" style="font-size: 1.25rem;"></i></a>
+                <a href="mailto:internationalteam@indiansales.in" class="nav-link" aria-label="Email"><i class="fa-solid fa-envelope text-secondary" style="font-size: 1.25rem;"></i></a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Removed Floating WhatsApp -->
+
+    <section class="section" style="padding-top: 150px; padding-bottom: 20px; background-color: var(--color-primary); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: #fff;">Get In Touch</h1>
+            <p style="color: var(--color-steel); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">Submit your bearing requirements or ask us any questions.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section" style="padding-top: 3rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-primary" style="font-size: 2rem; margin-bottom: 1.5rem;">Global Headquarters</h2>
+                    <p style="color: var(--color-steel); margin-bottom: 2rem; font-size: 1.1rem;">Whether you need a specific AP bearing, a spherical roller, or technical support on power transmission, our international team is ready to assist you.</p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; gap: 1rem; align-items: center; padding: 1.5rem; background: var(--color-gray-50); border-radius: 8px;">
+                            <i class="fa-solid fa-location-dot text-secondary" style="font-size: 2rem; width: 40px;"></i>
+                            <div>
+                                <h4 class="text-primary" style="margin-bottom: 0.25rem;">Our Office</h4>
+                                <p style="color: var(--color-steel); font-size: 0.95rem;">34, Nagdevi Street, 2nd Floor, Mumbai 400003</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; align-items: center; padding: 1.5rem; background: var(--color-gray-50); border-radius: 8px;">
+                            <i class="fa-solid fa-envelope text-secondary" style="font-size: 2rem; width: 40px;"></i>
+                            <div>
+                                <h4 class="text-primary" style="margin-bottom: 0.25rem;">Email Us</h4>
+                                <p style="font-size: 0.95rem;"><a href="mailto:internationalteam@indiansales.in" style="color: var(--color-steel);">internationalteam@indiansales.in</a></p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; align-items: center; padding: 1.5rem; background: var(--color-gray-50); border-radius: 8px;">
+                            <i class="fa-brands fa-linkedin text-secondary" style="font-size: 2rem; width: 40px;"></i>
+                            <div>
+                                <h4 class="text-primary" style="margin-bottom: 0.25rem;">Connect Professionally</h4>
+                                <p style="font-size: 0.95rem;"><a href="https://www.linkedin.com/company/indian-sales/" target="_blank" style="color: var(--color-steel);">Follow us on LinkedIn</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div style="background: var(--color-card-bg); padding: 2.5rem; border-radius: 8px; box-shadow: var(--shadow-lg); border: 1px solid var(--color-gray-200);">
+                    <h3 class="text-primary" style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send an Inquiry</h3>
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Your Name *</label>
+                                <input type="text" name="name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Company Name *</label>
+                                <input type="text" name="company" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Country *</label>
+                                <input type="text" name="country" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;">
+                            </div>
+                            <div>
+                                <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Contact Number</label>
+                                <input type="tel" name="phone" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;">
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Email Address *</label>
+                            <input type="email" name="email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;">
+                        </div>
+
+                        <div style="margin-bottom: 1rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Product Category</label>
+                            <select name="category" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;">
+                                <option value="Select a category">Select a category</option>
+                                <option value="Bearings">Bearings</option>
+                                <option value="Couplings">Couplings</option>
+                                <option value="Others">Others</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 1.5rem;">
+                            <label style="display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem;">Your Requirements / Message *</label>
+                            <textarea name="message" rows="4" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-gray-200); border-radius: 4px; outline: none;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="padding-top: 1rem; border: none;">
+                <p>&copy; 2026 Indian Sales. All Rights Reserved. | <a href="contact.html">Contact Us</a> | <a href="mailto:internationalteam@indiansales.in">internationalteam@indiansales.in</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

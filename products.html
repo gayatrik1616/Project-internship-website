@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Industrial Bearings | Indian Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="Indian Sales" onerror="this.src='https://placehold.co/150x50/0A192F/FFF?text=Indian+Sales'">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="brands.html" class="nav-link">Brands</a></li>
+                    <li><a href="industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="contact.html" class="nav-link btn btn-primary text-white" style="margin-left: 1rem;">Inquiry</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: var(--space-md);">
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="catalog-hero">
+            <div class="container">
+                <h1 style="font-size: 3.5rem;">Premium Industrial Bearings</h1>
+                <p>Engineering excellence through precision. Explore our extensive range of high-performance technical bearings.</p>
+            </div>
+        </section>
+
+        <!-- Catalog Content (2-Column Layout) -->
+        <section class="catalog-content">
+            <div class="container">
+                <div class="catalog-grid">
+                    
+                    <!-- Left Column: Filters -->
+                    <aside class="filter-panel">
+                        <div class="filter-section">
+                            <h4 class="filter-title">Search</h4>
+                            <div class="filter-search-box">
+                                <i class="fa-solid fa-search"></i>
+                                <input type="text" id="searchInput" placeholder="Search by Part No, Name, Dimensions...">
+                            </div>
+                        </div>
+
+                        <div class="filter-section">
+                            <h4 class="filter-title">Brands</h4>
+                            <div class="brand-options">
+                                <label class="brand-item">
+                                    <input type="radio" name="brand" value="Timken">
+                                    <span>Timken</span>
+                                </label>
+                                <label class="brand-item">
+                                    <input type="radio" name="brand" value="Dodge">
+                                    <span>Dodge</span>
+                                </label>
+                                <label class="brand-item">
+                                    <input type="radio" name="brand" value="Gamet" checked>
+                                    <span>Gamet</span>
+                                </label>
+                                <label class="brand-item">
+                                    <input type="radio" name="brand" value="Rexnord">
+                                    <span>Rexnord</span>
+                                </label>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Right Column: Table Results -->
+                    <div class="results-panel">
+                        <div class="catalog-header" style="justify-content: flex-end;">
+                            <div class="result-info" style="display: none;">
+                                <span id="resultCount">0</span> bearings found
+                            </div>
+                            <div class="pagination-top pagination-controls">
+                                <!-- Pagination JS -->
+                            </div>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="premium-table" id="catalogTable">
+                                <thead>
+                                    <tr>
+                                        <th>PART NO.</th>
+                                        <th>D (MM)</th>
+                                        <th>D (MM)</th>
+                                        <th>B (MM)</th>
+                                        <th>C (KN) / (N)</th>
+                                        <th>C0 (KN) / (N)</th>
+                                        <th>MASS (KG)</th>
+                                        <th>DETAILS</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="catalogTbody">
+                                    <!-- Rows JS -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="pagination-bottom pagination-controls">
+                            <!-- Pagination JS -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Send Your Requirement Section -->
+    <section class="requirement-section">
+        <div class="container">
+            <div class="requirement-container">
+                <h2 class="requirement-title">Send Your Requirement</h2>
+                <form id="requirementForm" class="requirement-form">
+                    <div class="form-group">
+                        <label for="reqName">Name *</label>
+                        <input type="text" id="reqName" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="reqEmail">Email *</label>
+                        <input type="email" id="reqEmail" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="reqPhone">Phone</label>
+                        <input type="tel" id="reqPhone" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label for="reqPartNo">Part Number</label>
+                        <input type="text" id="reqPartNo" placeholder="e.g. 32010">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="reqRequirement">Requirement *</label>
+                        <textarea id="reqRequirement" rows="4" required placeholder="Describe your requirement..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-send-inquiry">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('requirementForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('reqName').value;
+            const email = document.getElementById('reqEmail').value;
+            const phone = document.getElementById('reqPhone').value;
+            const partNo = document.getElementById('reqPartNo').value;
+            const requirement = document.getElementById('reqRequirement').value;
+
+            const subject = `New Requirement: ${partNo || 'Inquiry'} from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nPart Number: ${partNo}\n\nRequirement:\n${requirement}`;
+            
+            const mailtoLink = `mailto:internationalteam@indiansales.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+
+    <!-- Details Modal -->
+    <div class="modal-overlay" id="detailsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalPartNo">Part No.</h2>
+                <button class="modal-close" id="closeModalBtn"><i class="fa-solid fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <span class="modal-section-title">Product Type</span>
+                    <div class="modal-product-type" id="modalType">Double Row TRB (Metric) — Metric Double Row TRB</div>
+                </div>
+
+                <div class="modal-section">
+                    <span class="modal-section-title">Dimensions</span>
+                    <ul class="modal-spec-list">
+                        <li class="modal-spec-item">
+                            <span class="modal-spec-label">Bore diameter (d)</span>
+                            <span class="modal-spec-value"><span id="modalBore">--</span> mm</span>
+                        </li>
+                        <li class="modal-spec-item">
+                            <span class="modal-spec-label">Outside diameter (D)</span>
+                            <span class="modal-spec-value"><span id="modalOd">--</span> mm</span>
+                        </li>
+                        <li class="modal-spec-item">
+                            <span class="modal-spec-label">Width / T (B)</span>
+                            <span class="modal-spec-value"><span id="modalWidth">--</span> mm</span>
+                        </li>
+                        <li class="modal-spec-item">
+                            <span class="modal-spec-label">Mass (approx)</span>
+                            <span class="modal-spec-value"><span id="modalMass">--</span> kg</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <span class="modal-section-title">Load Ratings</span>
+                    <ul class="modal-spec-list">
+                        <li class="modal-spec-item">
+                            <span class="modal-spec-label">Basic dynamic load rating (C)</span>
+                            <span class="modal-spec-value"><span id="modalCLoad">--</span> N</span>
+                        </li>
+                        <li class="modal-spec-item">
+                            <span class="modal-spec-label">Basic static load rating (C0)</span>
+                            <span class="modal-spec-value"><span id="modalC0Load">--</span> N</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <span class="modal-section-title">Cross-Reference / Brand Equivalents</span>
+                    <p class="modal-cross-ref">Contact Indian Sales for specific interchange details.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="contact.html" class="btn btn-primary-modal">Request Quote</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="padding-top: 1rem; border: none;">
+                <p>&copy; 2026 Indian Sales. All Rights Reserved. | <a href="contact.html">Contact Us</a> | <a href="mailto:internationalteam@indiansales.in">internationalteam@indiansales.in</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/catalog.js"></script>
+</body>
+</html>

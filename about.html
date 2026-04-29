@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Indian Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="Indian Sales" onerror="this.src='https://placehold.co/150x50/0A192F/FFF?text=Indian+Sales'">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="brands.html" class="nav-link">Brands</a></li>
+                    <li><a href="industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="contact.html" class="nav-link btn btn-primary text-white" style="margin-left: 1rem;">Inquiry</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: var(--space-md);">
+                <a href="https://www.linkedin.com/company/indian-sales/" target="_blank" class="nav-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-secondary" style="font-size: 1.25rem;"></i></a>
+                <a href="mailto:internationalteam@indiansales.in" class="nav-link" aria-label="Email"><i class="fa-solid fa-envelope text-secondary" style="font-size: 1.25rem;"></i></a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 150px; padding-bottom: 20px; background-color: var(--color-primary-light); text-align: center; border-bottom: 1px solid var(--color-gray-200);">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; font-weight: 700;">Our Story & Expertise</h1>
+            <p style="max-width: 600px; margin: 0 auto; font-size: 1.15rem; font-weight: 500; color: var(--color-steel);">Driven by excellence, committed to precision.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section" style="padding-top: 3rem;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 class="text-primary" style="font-size: 2.5rem; margin-bottom: 1.5rem;">35+ Years of Trust & Quality</h2>
+                    <p style="margin-bottom: 1.5rem; font-size: 1.15rem; line-height: 1.8;">Established over three decades ago, Indian Sales has grown into a leading distributor of premium industrial bearings and couplings. Our legacy is built on an unwavering commitment to quality and a deeply ingrained focus on customer success.</p>
+                    <p style="margin-bottom: 2.5rem; font-size: 1.15rem; line-height: 1.8;">Through strategic partnerships with global brands like Timken, Dodge, Gamet, and Rexnord, we ensure that our local and international clients receive only the finest products, maximizing machine uptime and industrial efficiency.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; text-align: left; margin-bottom: 4rem;">
+                        <div style="background: var(--color-card-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--color-secondary); box-shadow: var(--shadow-sm);">
+                            <h4 class="text-primary" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-network-wired text-secondary"></i> Global Supply Network</h4>
+                            <p style="font-size: 0.95rem; color: var(--color-steel);">Robust logistics ensuring timely delivery worldwide.</p>
+                        </div>
+                        <div style="background: var(--color-card-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--color-secondary); box-shadow: var(--shadow-sm);">
+                            <h4 class="text-primary" style="margin-bottom: 0.5rem;"><i class="fa-solid fa-users text-secondary"></i> Customer Focus</h4>
+                            <p style="font-size: 0.95rem; color: var(--color-steel);">Customized solutions for complex industrial challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Image Placed Below -->
+                <div style="display: flex; justify-content: center;">
+                    <div style="background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary)); padding: 3rem; border-radius: 50%; width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-xl); border: 8px solid var(--color-gray-100); position: relative;">
+                        <div style="position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px dashed var(--color-secondary); animation: spin 20s linear infinite; opacity: 0.3;"></div>
+                        <i class="fa-solid fa-handshake text-secondary" style="font-size: 6rem; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3)); z-index: 1;"></i>
+                    </div>
+                </div>
+                
+                <!-- Inquiry Button -->
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="contact.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem; border-radius: 5px;">Send Inquiry Today</a>
+                </div>
+                <style>
+                    @keyframes spin { 100% { transform: rotate(360deg); } }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="padding-top: 1rem; border: none;">
+                <p>&copy; 2026 Indian Sales. All Rights Reserved. | <a href="contact.html">Contact Us</a> | <a href="mailto:internationalteam@indiansales.in">internationalteam@indiansales.in</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

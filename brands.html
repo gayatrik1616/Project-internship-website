@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockist Brands | Indian Sales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="./logo.png" alt="Indian Sales" onerror="this.src='https://placehold.co/150x50/0A192F/FFF?text=Indian+Sales'">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="brands.html" class="nav-link active">Brands</a></li>
+                    <li><a href="industries.html" class="nav-link">Industries</a></li>
+                    <li><a href="contact.html" class="nav-link btn btn-primary text-white" style="margin-left: 1rem;">Inquiry</a></li>
+                </ul>
+            </nav>
+            <div style="display: flex; align-items: center; gap: var(--space-md);">
+                <a href="https://www.linkedin.com/company/indian-sales/" target="_blank" class="nav-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin text-secondary" style="font-size: 1.25rem;"></i></a>
+                <a href="mailto:internationalteam@indiansales.in" class="nav-link" aria-label="Email"><i class="fa-solid fa-envelope text-secondary" style="font-size: 1.25rem;"></i></a>
+                <button class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Removed Floating WhatsApp -->
+
+    <section class="section" style="padding-top: 150px; padding-bottom: 20px; background-color: var(--color-primary); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Stockist Brands</h1>
+            <p style="color: var(--color-steel); max-width: 600px; margin: 0 auto; font-size: 1.1rem;">We are proud distributors of the world's most trusted manufacturing giants.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section" style="padding-top: 3rem;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; align-items: center; justify-items: center;">
+                
+                <div style="text-align: center; background: var(--color-card-bg); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md); width: 100%; border-bottom: 4px solid #f39c12; cursor: pointer;" data-brand="timken">
+                    <img src="./assets/timken_brand_logo.png" alt="Timken" style="max-height: 80px; margin: 0 auto 1.5rem auto;">
+                    <p style="color: var(--color-steel); font-size: 0.95rem;">Engineered bearings and power transmission products.</p>
+                </div>
+
+                <div style="text-align: center; background: var(--color-card-bg); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md); width: 100%; border-bottom: 4px solid #3498db; cursor: pointer;" data-brand="dodge">
+                    <img src="./assets/dodge_brand_logo.png" alt="Dodge" style="max-height: 80px; margin: 0 auto 1.5rem auto;">
+                    <p style="color: var(--color-steel); font-size: 0.95rem;">Reliable mechanical power transmission equipment.</p>
+                </div>
+
+                <div style="text-align: center; background: var(--color-card-bg); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md); width: 100%; border-bottom: 4px solid #e74c3c; cursor: pointer;" data-brand="gamet">
+                    <img src="./assets/gamet_bearings_logo.png" alt="Gamet" style="max-height: 80px; margin: 0 auto 1.5rem auto;">
+                    <p style="color: var(--color-steel); font-size: 0.95rem;">High precision machine tool bearings.</p>
+                </div>
+
+                <div style="text-align: center; background: var(--color-card-bg); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-md); width: 100%; border-bottom: 4px solid #2ecc71; cursor: pointer;" data-brand="rexnord">
+                    <img src="./assets/regal_rexnord_logo.png" alt="Rexnord" style="max-height: 80px; margin: 0 auto 1.5rem auto;">
+                    <p style="color: var(--color-steel); font-size: 0.95rem;">Advanced coupling and process motion control.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom" style="padding-top: 1rem; border: none;">
+                <p>&copy; 2026 Indian Sales. All Rights Reserved. | <a href="contact.html">Contact Us</a> | <a href="mailto:internationalteam@indiansales.in">internationalteam@indiansales.in</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script>
+        document.querySelectorAll('[data-brand]').forEach(el => {
+            el.addEventListener('click', () => {
+                const brand = el.getAttribute('data-brand');
+                window.location.href = `products.html?brand=${brand}`;
+            });
+        });
+    </script>
+</body>
+</html>
